@@ -1,0 +1,169 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* 🎨 Paleta de colores elegantes */
+  --primary-red: #8B0000;
+  --dark-red: #B22222;
+  --beige: #F5E6DA;
+  --black: #1C1C1C;
+  --gold: #D4AF37;
+
+  color-scheme: light dark;
+  color: var(--black);
+  background-color: var(--beige);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🔗 Enlaces */
+a {
+  font-weight: 500;
+  color: var(--primary-red);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--dark-red);
+}
+
+/* 🌍 Configuración General */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--beige);
+  color: var(--black);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--primary-red);
+}
+
+/* 🛑 Botones */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-red);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: var(--dark-red);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* 🌗 Modo Claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--black);
+    background-color: var(--beige);
+  }
+  a:hover {
+    color: var(--dark-red);
+  }
+  button {
+    background-color: var(--primary-red);
+  }
+}
+
+/* 📦 Contenedor de Productos */
+.productos-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📋 Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--gold);
+  color: var(--black);
+  font-weight: bold;
+}
+
+/* 📌 Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--black);
+  color: var(--gold);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.sidebar a {
+  color: var(--gold);
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+  background-color: var(--primary-red);
+  color: white;
+}
+
+/* 📋 Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ⚡ Efectos de Hover */
+button:hover, .sidebar a:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}

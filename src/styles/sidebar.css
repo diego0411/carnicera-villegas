@@ -1,0 +1,108 @@
+/* 📌 Estilos generales del Sidebar */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: linear-gradient(180deg, #8B0000, #5A0000); /* Degradado rojo oscuro */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 Logo y nombre del negocio */
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar-logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.sidebar-logo h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFD700; /* 🎨 Dorado */
+}
+
+/* 📌 Menú de navegación */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar-menu li:hover {
+    background: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+/* 📌 Enlaces del menú */
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+/* 📌 Iconos del menú */
+.sidebar-menu li svg {
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+/* 📌 Botón de cierre de sesión */
+.sidebar-logout {
+    margin-top: auto;
+    padding: 15px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-logout button {
+    width: 100%;
+    background: #D32F2F;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar-logout button:hover {
+    background: #B71C1C;
+}
+
+/* 📌 Ajuste para la vista del contenido */
+.main-content {
+    margin-left: 260px; /* Evita que el contenido se superponga al Sidebar */
+    padding: 20px;
+}
+.sidebar-logo {
+    text-align: center;
+    padding: 16px;
+    background-color: #8B0000; /* Rojo oscuro */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.sidebar-logo h5 {
+    color: #FFD700; /* Amarillo dorado */
+    font-weight: bold;
+}

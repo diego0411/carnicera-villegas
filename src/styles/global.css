@@ -1,0 +1,125 @@
+/* 🎨 Paleta de colores para la carnicería */
+:root {
+    --primary-color: #8B0000; /* Rojo oscuro */
+    --secondary-color: #5A0000; /* Rojo más oscuro */
+    --accent-color: #FFD700; /* Dorado */
+    --background-light: #F8F1E4; /* Beige */
+    --text-dark: #2E2E2E; /* Negro grisáceo */
+    --text-light: #FFFFFF; /* Blanco */
+}
+
+/* 📌 Configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 📌 Cuerpo */
+body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 📌 Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 📌 Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* 📌 Botones */
+button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* 📌 Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* 📌 Formularios */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* 📌 Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* 📌 Footer */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    text-align: center;
+}
+/* 📌 Estilos generales para botones */
+button, .MuiButton-root {
+    background-color: var(--primary-color) !important; /* Rojo oscuro */
+    color: var(--text-light) !important;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover, .MuiButton-root:hover {
+    background-color: var(--secondary-color) !important; /* Rojo más oscuro */
+  }
+  
+  /* 📌 Estilo para el nombre de usuario */
+  .usuario-nombre {
+    color: var(--primary-color) !important; /* Asegura que el texto sea rojo */
+    font-weight: bold;
+  }
+  

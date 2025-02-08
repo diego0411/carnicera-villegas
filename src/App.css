@@ -1,0 +1,124 @@
+/* 🎨 Paleta de colores refinada */
+:root {
+  --primary-color: #8B0000; /* Rojo oscuro */
+  --secondary-color: #5A0000; /* Rojo más oscuro */
+  --accent-color: #FFD700; /* Dorado */
+  --background-light: #F8F1E4; /* Beige */
+  --text-dark: #2E2E2E; /* Negro grisáceo */
+  --text-light: #FFFFFF; /* Blanco */
+}
+
+/* 📌 Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--background-light);
+}
+
+/* 📌 Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--primary-color));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #d63838aa);
+}
+
+/* 📌 Animación de logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* 📌 Estilos de Tarjetas */
+.card {
+  padding: 2em;
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: var(--text-light);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 Botones */
+button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* 📌 Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+/* 📌 Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* 📌 Footer */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  text-align: center;
+}
+
+/* 📌 Tipografía y alineación */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.read-the-docs {
+  color: #888;
+}
