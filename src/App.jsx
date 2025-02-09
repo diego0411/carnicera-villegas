@@ -9,9 +9,6 @@ import Reportes from "./pages/Reportes";
 import Configuracion from "./pages/Configuracion";
 import Header from "./components/Header";
 import Productos from "./pages/Productos"; 
-
-import "./styles/productos.css"
-import "./styles/sidebar.css";
 import axios from "axios";
 
 
