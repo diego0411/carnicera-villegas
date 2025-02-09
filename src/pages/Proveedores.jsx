@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import DataTable from "../components/DataTable";
 import api from "../services/api";
+import "../styles/global.css"
 
 const Proveedores = () => {
   const columns = [
